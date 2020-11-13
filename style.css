@@ -31,12 +31,17 @@ img {
 
 img,
 .unopened {
+  display: block;
   width: 240px;
   height: 240px;
   float: left;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px;
 }
 
 .unopened {
   background-color: blue;
+}
+
+img {
+  visibility: hidden;
 }
