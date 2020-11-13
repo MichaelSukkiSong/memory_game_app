@@ -20,11 +20,11 @@ img {
   border: 0;
 }
 
-/* body */
-body {
+/* box */
+.box {
   overflow: hidden;
   width: 780px;
-  height: 480px;
+  height: 780px;
 }
 
 /* images */
