@@ -1,4 +1,6 @@
 let img_src = [];
+let score = 0;
+let attmpts = 0;
 
 document.querySelector(".box").addEventListener("click", (e) => {
   if (e.target.matches(".unopened")) {
@@ -34,22 +36,24 @@ const resetArr = () => {
 };
 
 const countAndReturnScore = () => {
-  let score = 0;
   score += 1;
   return score;
 };
 
 const displayScore = (score) => {
+  document.querySelector(".score").innerHTML = `<h2 class="score">Score:</h2>`;
   document.querySelector(".score").insertAdjacentText("beforeend", `${score}`);
 };
 
 const countAndReturnAttempts = () => {
-  let attmpts = 0;
   attmpts += 1;
   return attmpts;
 };
 
 const displayFailedAttempts = (attempts) => {
+  document.querySelector(
+    ".attempts"
+  ).innerHTML = `<h2 class="attempts">Failed Attempts:</h2>`;
   document
     .querySelector(".attempts")
     .insertAdjacentText("beforeend", `${attempts}`);
