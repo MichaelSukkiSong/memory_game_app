@@ -1,0 +1,42 @@
+/* initialization */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+/* body */
+body {
+  overflow: hidden;
+  width: 780px;
+  height: 480px;
+}
+
+/* images */
+
+img,
+.unopened {
+  width: 240px;
+  height: 240px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+.unopened {
+  background-color: blue;
+}
